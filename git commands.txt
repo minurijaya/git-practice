@@ -1,0 +1,29 @@
+To create a new branch:
+1. Make sure there are no uncommited changes
+2. Checkout to the master branch
+    git checkout master
+3. Create the new branch. Assume the branch name is feature/test-feature
+    git branch feature/test-feature
+4. Checkout to the newly created branch
+    git checkout feature/test-feature
+
+
+To publish local branch to remote
+1. The branch should not exist in the remote already
+2. Type the following to publish. (assuming the name is feature/test-feature)
+    git push -U origin feature/test-feature
+
+To publish local changes to remote
+1. The branch should exist in the remote already
+2. Type the following to publish. (assuming the name is feature/test-feature)
+    git push origin feature/test-feature
+
+
+To get remote changes from remote
+1. Go to the branch you want to get updates of 
+    git checkout feature/test-feature
+2. Pull the updates 
+    git pull origin feature/test-feature
+
+To merge master branch to a feature branch (feature/test-feature)
+    git merge master feature/test-feature
